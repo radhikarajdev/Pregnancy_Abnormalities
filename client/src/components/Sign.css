@@ -1,0 +1,112 @@
+/* Sign.css */
+
+/* Container styling for centering the form */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.bg-secondary {
+  background-color: #f8f9fa;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.w-25 {
+  width: 25%;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.bt {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-default {
+  color: #212529;
+  padding: 3px;
+  border: 1px solid #1f519c;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50px;
+  border-color: #1f519c;
+}
+
+/* Additional styling for text */
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: center;
+}

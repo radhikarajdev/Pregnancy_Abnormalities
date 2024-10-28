@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(to bottom, #275bbd 50%, #F5F5DC 50%); */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #275bbd;
+  background-color: #e8e6d6;
+  border-radius: 20px;
+}

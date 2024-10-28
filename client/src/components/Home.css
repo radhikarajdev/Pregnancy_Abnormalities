@@ -1,0 +1,79 @@
+/* .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px; 
+} */
+
+.before{
+  display: flex;
+  /* flex-direction: column; */
+  height: 93vh;
+  align-items: center; /* Ensure all content is centered horizontally */
+  /* text-align: center; */
+  justify-content: space-between;
+  padding: 30px 0px;
+  background-color: #1f519c;
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1;
+  padding-left: 4rem;
+}
+
+.image-container {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.circular-image {
+  width: 800px;
+  height: 700px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+  position: relative;
+  right: -250px;
+  top: -50px;
+}
+
+/* Main heading */
+.main-content h1 {
+  margin: 0;
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Subtext or supporting paragraph */
+.main-content p {
+  margin-top: 0;
+  padding: 15px;
+  padding-top: 60px;
+  line-height: 1.4;
+  font-size: 28px; /* Slightly smaller text for paragraph */
+  color: white; /* Gray color for body text */
+  text-align: center;
+}
+
+.after{
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  align-items: center; /* Ensure all content is centered horizontally */
+  text-align: center; /* Center-align text */
+  justify-content: center;
+  padding: 100px 20px; /* Spacing around the content */
+  background-color: #e8e6d6;
+  color: grey;
+}
+
+.disclaimer h1{
+  color: #1f519c;
+}
+.disclaimer p{
+  color: #1f519c;
+}

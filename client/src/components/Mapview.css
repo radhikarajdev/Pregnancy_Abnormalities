@@ -1,0 +1,31 @@
+.map-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center; /* Ensure all content is centered horizontally */
+    text-align: center; /* Center-align text */
+    justify-content: center;
+    padding: 100px 20px; /* Spacing around the content */
+    background-color: #1f519c;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 3rem;
+}
+
+.map-container {
+    width: 100%;
+    padding: 0 3rem;
+    padding-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+.hospital-name {
+    color: #1f519c; /* Set your desired color */
+    font-size: 20px;
+    font-weight: bold;
+}
