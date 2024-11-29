@@ -1,44 +1,72 @@
-.container1{
+.container1, .container2 {
     display: flex;
-    height: 93vh;
     flex-direction: column;
+    height: 93vh;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    padding: 100px 20px; /* Spacing around the content */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.container1 {
     background-color: #e8e6d6;
     color: grey;
 }
 
 .container2 {
-    display: flex;
-    flex-direction: column;
-    height: 93vh;
-    align-items: center; /* Ensure all content is centered horizontally */
-    text-align: center; /* Center-align text */
-    justify-content: center;
-    padding: 100px 20px; /* Spacing around the content */
     background-color: #1f519c;
 }
 
-.container h1, h2{
+.container h1, h2 {
     font-size: 70px;
     color: #1f519c;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.container p{
+.container p {
     margin-top: 2rem;
-    padding: 50px;
+    padding: 50px 20px;
     padding-top: 60px;
     line-height: 1.6;
     font-size: 30px;
     color: #1f519c;
-    text-align: center;
 }
 
 .container2 p {
     color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container1, .container2 {
+        padding: 60px 15px;
+    }
+
+    .container h1, h2 {
+        font-size: 50px;
+    }
+
+    .container p {
+        font-size: 24px;
+        padding: 30px 15px;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .container1, .container2 {
+        padding: 40px 10px;
+    }
+
+    .container h1, h2 {
+        font-size: 35px;
+    }
+
+    .container p {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
 }

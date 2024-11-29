@@ -1,0 +1,230 @@
+version: "3.1"
+
+intents:
+  - general_question
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - pregnancy_anxiety
+  - manage_pregnancy_stress
+  - decision_support
+  - prenatal_diet
+  - exercise_during_pregnancy
+  - first_trimester_symptoms
+  - second_trimester_symptoms
+  - third_trimester_symptoms
+  - manage_nausea
+  - manage_fatigue
+  - manage_heartburn
+  - manage_back_pain
+  - manage_swelling
+  - manage_mood_swings
+  - manage_constipation
+  - manage_headaches
+  - manage_shortness_of_breath
+  - manage_leg_cramps
+  - recommend_fruits
+  - recommend_vegetables
+  - recommend_proteins
+  - recommend_dairy
+  - recommend_grains
+  - recommend_snacks
+  - recommend_hydration
+  - recommend_vitamins
+  - recommend_fiber
+  - recommend_healthy_fats
+  - recommend_exercise_types
+  - recommend_exercise_frequency
+  - recommend_safe_exercises
+  - recommend_exercise_duration
+  - recommend_postpartum_exercise
+  - recommend_exercise_for_energy
+  - recommend_exercise_for_mood
+  - recommend_stretching_exercises
+  - recommend_low_impact_exercises
+  - recommend_exercise_for_back_pain
+  - request_professional_help
+
+# slots:
+# user_location:
+#  type: text
+
+actions:
+- action_refer_to_professional
+- action_answer_general_question
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_prenatal_diet:
+  - text: "Eating well during pregnancy is so important for you and your baby's health!
+I recommend focusing on a balanced diet that includes plenty of fruits, vegetables, whole grains, and lean proteins.
+Foods rich in folic acid, like leafy greens, citrus fruits, and fortified cereals, are especially great for preventing neural tube defects.
+Don't forget calcium-rich foods like milk, yogurt, or cheese to support your baby's bone development, and iron-rich foods such as spinach, beans, or lean meats to keep your energy up.
+Oh, and try to avoid raw or undercooked food, soft cheeses, and unpasteurized dairy products—they can carry harmful bacteria. If you’d like, I can share some meal ideas!"
+
+  utter_exercise_during_pregnancy:
+  - text: "Staying active during pregnancy can be really beneficial! Light exercises, such as walking, swimming, or yoga, can help with blood circulation, reduce stress, and prepare your body for childbirth.
+But remember, every pregnancy is unique. It's always a good idea to check with your doctor first to make sure your exercise plan is safe for you and your baby.
+If you’re new to exercising, start slowly and listen to your body. Feeling tired or out of breath? It’s time to take a break. I can suggest some pregnancy-friendly exercises if you'd like!"
+
+  utter_first_trimester_symptoms:
+  - text: "Ah, the first trimester—it's such an exciting time, but it can come with some challenges too.
+Many women experience nausea or morning sickness, which is pretty common in the early weeks.
+You might also feel more tired than usual—your body is working hard to grow a tiny human! Breast tenderness, mood swings, and food cravings (or aversions) can also pop up.
+It’s normal, but if anything feels overwhelming, don’t hesitate to talk to your doctor.
+I can also share some tips to help with nausea or fatigue if you're interested!"
+
+  utter_second_trimester_symptoms:
+  - text: "Ah, the second trimester—many women find this to be the most comfortable phase of pregnancy!
+      Nausea usually fades, and your energy levels might feel like they’re bouncing back, which is such a relief.
+      This is also the time when your baby bump starts to show, and you might feel those first baby movements—it’s so exciting!
+      On the other hand, some symptoms like back pain, leg cramps, or heartburn might make an appearance as your body continues to adjust.
+      It’s a good time to enjoy this phase, but if anything feels off or you’d like tips for staying comfortable, I’m here to help!"
+
+  utter_third_trimester_symptoms:
+  - text: "Ah, the third trimester—you’re in the home stretch now! It’s amazing how close you are to meeting your baby, but this phase can bring some challenges.
+You might feel more tired as your baby grows, and finding a comfortable sleeping position can be tricky.
+Swelling in your feet and ankles, backaches, and Braxton Hicks contractions—those practice contractions—are all common as your body gets ready for labor.
+As your baby drops lower in your belly, you might find it easier to breathe but might need more frequent trips to the restroom.
+If you’d like some tips for managing these symptoms or preparing for labor, just let me know!"
+
+  utter_pregnancy_anxiety:
+  - text: "I'm so sorry you're feeling this way, and it's completely okay to feel anxious or uncertain about pregnancy.
+Many people go through these emotions—it’s a big change, and it's natural to have worries.
+If you're comfortable, you can talk to someone you trust, like a friend, family member, or a healthcare provider.
+They can help you sort through your feelings and make the best decisions for yourself.
+
+Remember, you’re not alone, and it’s okay to take things one step at a time.
+If you'd like, I can share tips for managing stress during pregnancy or help you find resources for additional support."
+
+  utter_manage_nausea:
+  - text: "Nausea can be tough, but remember that it often improves as your pregnancy progresses. Try eating small, frequent meals and keeping some ginger tea or crackers on hand for those rough moments. You're doing an amazing job, and if you need more tips or support, feel free to ask!"
+
+  utter_manage_fatigue:
+  - text: "Feeling tired is completely normal during pregnancy, especially as your body works hard to nurture your little one. Make sure to rest whenever you can, and consider light exercises like walking to boost your energy. You're nearing an incredible journey, and if you want more advice or tips, I'm here to help!"
+
+  utter_manage_heartburn:
+  - text: "Heartburn can be a pesky companion, but it often means your body is doing its job! Eating smaller meals and avoiding certain trigger foods can help ease the discomfort. You're doing great, and if you'd like more personalized tips, just let me know!"
+
+  utter_manage_back_pain:
+  - text: "Back pain is a common experience as your body changes, but there are ways to find relief! Practicing good posture and gentle stretching can make a big difference. You're doing wonderfully, and if you need additional support or tips, feel free to reach out!"
+
+  utter_manage_swelling:
+  - text: "Swelling can be a normal part of pregnancy, especially as you near the end. Elevating your feet and staying hydrated can really help. You're doing an incredible job, and if you have any questions or need more tips, I'm here for you!"
+
+  utter_manage_mood_swings:
+  - text: "Mood swings are completely natural during pregnancy, and they often reflect the amazing changes happening in your body. Practicing relaxation techniques can help, and remember, it's okay to talk about how you're feeling. You're not alone in this journey—if you want more support or tips, just ask!"
+
+  utter_manage_constipation:
+  - text: "Constipation can be frustrating, but you're not alone! Increasing your fiber intake and staying hydrated can really help. Remember, your body is doing an incredible job preparing for your little one. If you need more tips or have questions, I’m here to support you!"
+
+  utter_manage_headaches:
+  - text: "Headaches can be challenging, but they often improve as your pregnancy progresses. Staying hydrated and resting in a quiet space can help ease the discomfort. You're doing an amazing job, and if you need more tips or support, don’t hesitate to reach out!"
+
+  utter_manage_shortness_of_breath:
+  - text: "Shortness of breath can be a common experience as your baby grows, but it’s important to listen to your body. Taking slow, deep breaths can help. Remember, you're nearing the exciting arrival of your little one! If you have more questions or need tips, I’m here for you!"
+
+  utter_manage_leg_cramps:
+  - text: "Leg cramps can be a nuisance, but they’re often a sign of your body adjusting to pregnancy. Stretching before bed and staying hydrated can help relieve them. You're doing a fantastic job, and if you’d like more tips or support, feel free to ask!"
+
+  utter_recommend_fruits:
+  - text: "Fruits are packed with essential vitamins and minerals! Try to include a variety of colorful fruits like berries, oranges, and bananas in your diet. They're great for both you and your baby!"
+
+  utter_recommend_vegetables:
+  - text: "Vegetables are vital for a healthy pregnancy! Aim for dark leafy greens like spinach and kale, as well as colorful veggies like carrots and bell peppers. They provide important nutrients for you and your growing baby!"
+
+  utter_recommend_proteins:
+  - text: "Protein is crucial during pregnancy. Include lean meats, poultry, fish, beans, and legumes in your meals. They help support your baby's growth and development!"
+
+  utter_recommend_dairy:
+  - text: "Dairy products are a great source of calcium and vitamin D, which are important for your baby's bone development. Consider yogurt, milk, and cheese as part of your daily diet!"
+
+  utter_recommend_grains:
+  - text: "Whole grains like brown rice, quinoa, and whole wheat bread provide essential nutrients and fiber. They can help keep your energy levels steady throughout the day!"
+
+  utter_recommend_snacks:
+  - text: "Healthy snacks can help keep your energy up and provide necessary nutrients. Consider options like nuts, yogurt, or whole-grain crackers with hummus. You're doing a great job taking care of yourself!"
+
+  utter_recommend_hydration:
+  - text: "Staying hydrated is vital during pregnancy! Aim for at least 8-10 cups of water a day. Herbal teas and fresh fruit-infused water can be great alternatives, too!"
+
+  utter_recommend_vitamins:
+  - text: "Prenatal vitamins are essential for your health and your baby's development. Make sure to include folic acid, iron, and DHA in your supplements. Always consult your healthcare provider for personalized advice!"
+
+  utter_recommend_fiber:
+  - text: "Fiber is important for digestion and can help prevent constipation. Incorporate foods like whole grains, fruits, and vegetables into your diet to keep things moving smoothly!"
+
+  utter_recommend_healthy_fats:
+  - text: "Healthy fats are important for your baby's brain development. Include sources like avocados, nuts, seeds, and olive oil in your meals. You're making great choices for both you and your little one!"
+
+
+  utter_recommend_exercise_types:
+  - text: "It's important to stay active during pregnancy! Consider activities like walking, swimming, and prenatal yoga. These exercises can help keep you fit and prepare you for labor."
+
+  utter_recommend_exercise_frequency:
+  - text: "Aim for at least 150 minutes of moderate-intensity exercise each week. This could be broken down into 30 minutes a day, five days a week. Always listen to your body and adjust as needed!"
+
+  utter_recommend_safe_exercises:
+  - text: "Safe exercises during pregnancy include walking, stationary cycling, and prenatal yoga. Always consult your healthcare provider before starting any new exercise program."
+
+  utter_recommend_exercise_duration:
+  - text: "When exercising during pregnancy, aim for 20 to 30 minutes per session. It's important to stay active, but also to listen to your body and take breaks as needed."
+
+  utter_recommend_postpartum_exercise:
+  - text: "After giving birth, start with gentle exercises like walking and pelvic floor exercises. Gradually increase intensity as you feel more comfortable and consult your healthcare provider for personalized advice."
+
+  utter_recommend_exercise_for_energy:
+  - text: "Regular physical activity can help boost your energy levels during pregnancy. Try light activities like walking or swimming to keep your energy up without overexerting yourself."
+
+  utter_recommend_exercise_for_mood:
+  - text: "Exercise is a great way to improve your mood during pregnancy! Activities like yoga and walking can help reduce stress and anxiety, making you feel more relaxed and happy."
+
+  utter_recommend_stretching_exercises:
+  - text: "Stretching can help alleviate tension and improve flexibility. Consider gentle stretches or prenatal yoga to keep your muscles relaxed and comfortable during pregnancy."
+
+  utter_recommend_low_impact_exercises:
+  - text: "Low-impact exercises such as swimming, cycling, and walking are great options during pregnancy. They reduce the risk of injury while keeping you active and healthy."
+
+  utter_recommend_exercise_for_back_pain:
+  - text: "If you're experiencing back pain during pregnancy, consider exercises like pelvic tilts, cat-cow stretches, and gentle yoga. Always consult your healthcare provider for personalized recommendations."
+
+
+  utter_manage_pregnancy_stress:
+  - text: "Here are some tips for managing stress during pregnancy:
+- Take deep breaths or try prenatal yoga to relax.
+- Talk to your doctor or a counselor—they can provide guidance specific to your situation.
+- Remember, self-care is essential, whether it’s listening to music, taking a walk, or just having a quiet moment to yourself.
+It’s okay to prioritize your well-being."
+
+  utter_decision_support:
+  - text: "Deciding whether to continue with a pregnancy is deeply personal, and there’s no 'right' or 'wrong' choice.
+It might help to talk to a counselor or a healthcare provider who can guide you through your options.
+
+Take your time to process your feelings, and reach out to a support network that makes you feel safe and heard."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

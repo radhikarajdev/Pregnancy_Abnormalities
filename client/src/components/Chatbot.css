@@ -1,0 +1,68 @@
+/* Chatbot Container Styling */
+.chat-container {
+  display: flex; /* Flexbox for centering */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 120px; /* Space above the footer, adjust as needed */
+  right: 20px; /* Adjust if needed */
+  width: 45%; /* Similar width as Sign.css */
+  height: 650px; /* Adjust height as needed */
+  background-color: #ffffff; /* White background like Sign.css */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1rem; /* Padding similar to Sign.css */
+  z-index: 1000; /* Keep it above other elements */
+  overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+  background-color: #1f519c; /* Same color as the login button */
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Chat Messages Area */
+.chat-messages {
+  flex-grow: 1; /* Makes it flexible to grow */
+  width: 100%;
+  padding: 1rem;
+  overflow-y: auto; /* Scroll for messages */
+  background-color: #f8f9fa; /* Light background for messages */
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem; /* Space for the input area */
+}
+
+/* Input Area */
+.chat-input {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem 0 0 0.25rem;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745; /* Green button like Sign.css */
+  border: 1px solid #28a745;
+  color: white;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}

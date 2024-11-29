@@ -1,0 +1,365 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: prenatal_diet
+  examples: |
+    - What should I eat during pregnancy?
+    - Can you suggest a diet for pregnant women?
+    - Tell me about prenatal nutrition.
+    - What foods are safe during pregnancy?
+
+- intent: exercise_during_pregnancy
+  examples: |
+    - Is exercise safe during pregnancy?
+    - What exercises can I do while pregnant?
+    - Can I work out during pregnancy?
+    - Is yoga safe for pregnant women?
+
+- intent: provide_location
+  examples: |
+    - I live in New York.
+    - I'm based in Los Angeles.
+    - My location is Boston.
+- intent: pregnancy_anxiety
+  examples: |
+    - I'm feeling really anxious about this pregnancy.
+    - What if I can't handle being pregnant?
+    - I am worried about how the baby will affect my life.
+    - I'm not sure if I should go through with this pregnancy.
+    - I feel stressed and overwhelmed about the whole situation.
+    - This pregnancy is making me so nervous.
+    - What if I can't take care of the baby properly?
+    - I feel so tense thinking about the future.
+    - I'm worried that something will go wrong.
+    - Pregnancy has been so stressful for me.
+- intent: first_trimester_symptoms
+  examples: |
+    - What are common symptoms in the first trimester?
+    - Can you tell me about the first trimester?
+    - How will I feel in the first trimester?
+- intent: second_trimester_symptoms
+  examples: |
+    - What symptoms occur during the second trimester?
+    - Tell me about the second trimester of pregnancy.
+    - How will my body change in the second trimester?
+- intent: third_trimester_symptoms
+  examples: |
+    - What should I expect in the third trimester?
+    - Can you tell me about the third trimester symptoms?
+    - How does the third trimester feel?
+- intent: manage_nausea
+  examples: |
+    - How can I manage nausea?
+    - Do you have any tips for nausea?
+    - I'm feeling nauseous. Any advice?
+    - What can I do about morning sickness?
+- intent: manage_fatigue
+  examples: |
+    - I'm always tired. Any tips for fatigue?
+    - How can I handle pregnancy fatigue?
+    - What can I do about feeling so tired?
+    - Do you have advice for dealing with fatigue?
+- intent: manage_heartburn
+  examples: |
+    - How can I relieve heartburn during pregnancy?
+    - What can I do about acid reflux?
+    - Any tips for managing heartburn while pregnant?
+    - I'm experiencing heartburn. What should I do?
+- intent: manage_back_pain
+  examples: |
+    - My back hurts. What can I do about it?
+    - Any advice for relieving back pain during pregnancy?
+    - How can I manage lower back pain?
+    - I'm having back pain. What are some remedies?
+- intent: manage_swelling
+  examples: |
+    - Why are my feet swelling?
+    - How can I reduce swelling during pregnancy?
+    - Any tips for managing swollen ankles?
+    - What should I do about my swollen hands and feet?
+- intent: manage_mood_swings
+  examples: |
+    - I'm feeling really emotional. What can I do?
+    - How can I handle mood swings during pregnancy?
+    - Any tips for managing my emotions?
+    - I'm experiencing mood swings. What should I do?
+- intent: manage_constipation
+  examples: |
+    - I'm having trouble with constipation. Any advice?
+    - How can I relieve constipation during pregnancy?
+    - What can I do about being constipated?
+    - Any tips for managing digestive issues?
+- intent: manage_headaches
+  examples: |
+    - I'm getting a lot of headaches. What can I do?
+    - How can I relieve headaches during pregnancy?
+    - Any tips for managing pregnancy-related headaches?
+    - I'm experiencing frequent headaches. What should I do?
+- intent: manage_shortness_of_breath
+  examples: |
+    - I'm feeling short of breath. Is this normal?
+    - How can I manage shortness of breath during pregnancy?
+    - Any tips for dealing with breathlessness?
+    - What should I do if I can't catch my breath?
+- intent: manage_leg_cramps
+  examples: |
+    - I'm getting leg cramps at night. Any tips?
+    - How can I relieve cramps during pregnancy?
+    - What should I do about my leg cramps?
+    - I'm experiencing muscle cramps. What can I do?
+- intent: recommend_fruits
+  examples: |
+    - What fruits should I eat during pregnancy?
+    - Can you suggest some healthy fruits?
+    - I need fruit recommendations for my diet.
+    - What are good fruits to eat while pregnant?
+    - Are there any fruits that are best for pregnancy?
+- intent: recommend_vegetables
+  examples: |
+    - What vegetables are good for pregnant women?
+    - Can you recommend some healthy veggies?
+    - I want to eat more vegetables during my pregnancy.
+    - Which vegetables should I include in my diet?
+    - Are there specific veggies that are beneficial for pregnancy?
+- intent: recommend_proteins
+  examples: |
+    - What protein sources should I focus on?
+    - Can you suggest some healthy proteins for pregnancy?
+    - I need protein recommendations for my diet.
+    - What are good protein options during pregnancy?
+    - Are there specific proteins I should eat?
+- intent: recommend_dairy
+  examples: |
+    - Is dairy important during pregnancy?
+    - What dairy products should I consume?
+    - Can you recommend some healthy dairy options?
+    - What are the best dairy foods for pregnant women?
+    - How much dairy should I include in my diet?
+- intent: recommend_grains
+  examples: |
+    - What grains are good for pregnancy?
+    - Can you suggest healthy grains to eat?
+    - I want to include more grains in my diet.
+    - Which grains should I focus on during pregnancy?
+    - Are there specific grains that are beneficial for pregnant women?
+- intent: recommend_snacks
+  examples: |
+    - What healthy snacks can I eat while pregnant?
+    - Can you recommend some good snacks for pregnancy?
+    - I need snack ideas for my pregnancy diet.
+    - What are some nutritious snacks I can have?
+    - Are there any snacks that are particularly good for pregnant women?
+- intent: recommend_hydration
+  examples: |
+    - How much water should I drink during pregnancy?
+    - What are good hydration tips for pregnant women?
+    - Can you suggest ways to stay hydrated?
+    - How can I ensure I'm drinking enough fluids?
+    - Are there specific drinks I should focus on?
+- intent: recommend_vitamins
+  examples: |
+    - What vitamins should I take during pregnancy?
+    - Can you suggest prenatal vitamins?
+    - Are there specific nutrients I need while pregnant?
+    - What vitamins are essential for my baby's development?
+    - How can I ensure I'm getting the right vitamins?
+- intent: recommend_fiber
+  examples: |
+    - How can I increase fiber in my diet during pregnancy?
+    - What are good sources of fiber for pregnant women?
+    - Can you recommend fiber-rich foods?
+    - Why is fiber important during pregnancy?
+    - What foods can help with constipation?
+- intent: recommend_healthy_fats
+  examples: |
+    - What healthy fats should I include in my diet?
+    - Can you suggest sources of healthy fats?
+    - Are there specific fats that are good for pregnancy?
+    - What are some healthy fat options for pregnant women?
+    - How can I incorporate healthy fats into my meals?
+- intent: recommend_exercise_types
+  examples: |
+    - What types of exercises can I do while pregnant?
+    - Can you suggest some safe exercises for pregnancy?
+    - What exercises are best for pregnant women?
+    - What should I be doing for exercise during pregnancy?
+    - Are there specific types of workouts I should focus on?
+- intent: recommend_exercise_frequency
+  examples: |
+    - How often should I exercise during pregnancy?
+    - What is the recommended frequency for exercising while pregnant?
+    - How many days a week should I work out during pregnancy?
+    - Can you tell me how often I should be active?
+    - What's the ideal exercise frequency for pregnant women?
+- intent: recommend_safe_exercises
+  examples: |
+    - What exercises are safe during pregnancy?
+    - Can you recommend exercises that are safe for me?
+    - Are there any exercises I should avoid while pregnant?
+    - What are the safest workouts for pregnant women?
+    - Which exercises should I definitely do during pregnancy?
+- intent: recommend_exercise_duration
+  examples: |
+    - How long should I exercise each day while pregnant?
+    - What is the ideal duration for workouts during pregnancy?
+    - Can you tell me how long I should be exercising?
+    - How many minutes should I spend on exercise daily?
+    - What's the recommended length of exercise sessions for pregnant women?
+- intent: recommend_postpartum_exercise
+  examples: |
+    - What exercises should I do after giving birth?
+    - Can you suggest safe workouts for postpartum recovery?
+    - How can I get back into exercising after pregnancy?
+    - What should I focus on for postpartum exercise?
+    - When can I start exercising again after having a baby?
+- intent: recommend_exercise_for_energy
+  examples: |
+    - What exercises can help boost my energy during pregnancy?
+    - Can you suggest activities that increase energy levels while pregnant?
+    - What should I do to stay energized during my pregnancy?
+    - Are there specific exercises that can help with fatigue?
+    - How can I use exercise to improve my energy while pregnant?
+- intent: recommend_exercise_for_mood
+  examples: |
+    - What exercises can help improve my mood during pregnancy?
+    - Can you suggest activities that reduce stress while pregnant?
+    - How can exercise help with my mood during pregnancy?
+    - What workouts are good for mental health during pregnancy?
+    - Are there specific exercises that can help with anxiety?
+- intent: recommend_stretching_exercises
+  examples: |
+    - What stretching exercises are safe during pregnancy?
+    - Can you recommend some good stretches for pregnant women?
+    - How can I incorporate stretching into my pregnancy routine?
+    - What are the best stretches to relieve tension while pregnant?
+    - Are there specific stretches I should focus on during pregnancy?
+- intent: recommend_low_impact_exercises
+  examples: |
+    - What low-impact exercises can I do while pregnant?
+    - Can you suggest some gentle workouts for pregnancy?
+    - What are the best low-impact activities for pregnant women?
+    - How can I stay active without high-impact exercises?
+    - Are there specific low-impact exercises that are recommended?
+- intent: recommend_exercise_for_back_pain
+  examples: |
+    - What exercises can help with back pain during pregnancy?
+    - Can you suggest safe workouts for relieving back pain?
+    - How can I alleviate back pain through exercise?
+    - What are the best exercises for back pain relief while pregnant?
+    - Are there specific movements I should do to help with back discomfort? ### Instructions for Use
+- intent: general_question
+  examples: |
+    - What is pregnancy?
+    - How can I stay healthy during pregnancy?
+    - Can I exercise while pregnant?
+    - What is the best time for an ultrasound?
+- intent: decision_support
+  examples: |
+    - I am not sure about continuing this pregnancy.
+    - Should I go through with this pregnancy?
+    - I need help deciding about my pregnancy.
+    - I feel conflicted about becoming a parent.
+    - Can you support me in making this decision?
+- intent: manage_pregnancy_stress
+  examples: |
+    - How can I handle stress during pregnancy?
+    - I feel very anxious about my pregnancy.
+    - Do you have tips for managing pregnancy stress?
+    - I'm overwhelmed with pregnancy worries.
+    - What can I do to relax while pregnant?
+- intent: request_professional_help
+  examples: |
+    - Can you refer me to a counselor?
+    - I need professional help with pregnancy anxiety.
+    - Who can I talk to about my worries?
+    - Can you connect me with a doctor?
+    - I want to find a therapist near me.

@@ -1,74 +1,77 @@
-/* .main-content {
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #f4f4f9; /* Subtle background color */
+}
+
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 100px 20px; 
-} */
-
-.before{
-  display: flex;
-  /* flex-direction: column; */
-  height: 93vh;
-  align-items: center; /* Ensure all content is centered horizontally */
-  /* text-align: center; */
-  justify-content: space-between;
-  padding: 30px 0px;
-  background-color: #1f519c;
-  overflow: hidden;
+  /* padding: 60px 20px; */
 }
 
-.text-content {
-  flex: 1;
-  padding-left: 4rem;
-}
-
-.image-container {
-  flex-shrink: 0;
-  position: relative;
-}
-
-.circular-image {
-  width: 800px;
-  height: 700px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: auto;
-  position: relative;
-  right: -250px;
-  top: -50px;
-}
-
-/* Main heading */
-.main-content h1 {
-  margin: 0;
-  font-size: 70px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Subtext or supporting paragraph */
-.main-content p {
-  margin-top: 0;
-  padding: 15px;
-  padding-top: 60px;
-  line-height: 1.4;
-  font-size: 28px; /* Slightly smaller text for paragraph */
-  color: white; /* Gray color for body text */
-  text-align: center;
-}
-
-.after{
+.before {
   display: flex;
   flex-direction: column;
-  height: 93vh;
-  align-items: center; /* Ensure all content is centered horizontally */
-  text-align: center; /* Center-align text */
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between; /* Center and space out content */
+  /* padding: 30px 0px; */
+  background: linear-gradient(135deg, #1f519c,#1f519c ); /* Gradient background for elegance */
+  color: white;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.after {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
   justify-content: center;
-  padding: 100px 20px; /* Spacing around the content */
+  /* padding: 34px 20px; */
   background-color: #e8e6d6;
+  width:100vw;
   color: grey;
+}
+
+/* Circular image styling - slightly smaller and refined */
+.circular-image {
+  width: 100%;
+  max-width: 50vw; /* Slightly smaller than the original */
+  height: auto;
+  border-radius: 2rem; /* Soft rounded corners, not circular */
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Main heading styling */
+.main-content h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); /* Soft text shadow for elegance */
+}
+
+/* Paragraph styling */
+.main-content p {
+  margin-top: 2rem;
+  padding: 15px;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  color: white;
+  max-width: 700px;
+  text-align: center;
 }
 
 .disclaimer h1{
@@ -76,4 +79,49 @@
 }
 .disclaimer p{
   color: #1f519c;
+}
+
+.text-content{
+  margin-top: 3rem;
+}
+
+/* Responsive styling for tablets and mobile */
+@media (max-width: 768px) {
+  .before {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+
+  .circular-image {
+    max-width: 65vw; /* Slightly increase size on medium screens */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  .circular-image {
+    max-width: 80vw;  /* Increase size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .after {
+    padding: 20px;
+  }
 }

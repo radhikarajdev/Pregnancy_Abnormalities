@@ -1,31 +1,61 @@
-.map-page{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center; /* Ensure all content is centered horizontally */
-    text-align: center; /* Center-align text */
-    justify-content: center;
-    padding: 100px 20px; /* Spacing around the content */
-    background-color: #1f519c;
-    overflow: hidden;
+.map-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height:45vmax;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  background: #1f519c;
+  overflow: auto;
 }
+
+.map-page h1{
+  margin-top: 4rem;
+}
+
 
 h1 {
-    font-size: 70px;
-    margin: 3rem;
+  font-size: clamp(15px, 4vw, 50px);
+  margin: 0.5rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease; 
 }
-
 .map-container {
-    width: 100%;
-    padding: 0 3rem;
-    padding-top: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem 0;
+  height: calc(100vh - 120px);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  justify-content: center;
+}.hospital-name {
+  color: #1f519c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
-  
-.hospital-name {
-    color: #1f519c; /* Set your desired color */
-    font-size: 20px;
-    font-weight: bold;
+@media (max-width: 768px) {
+  .map-page {
+      padding: 50px 10px;
+  }
+
+  h1 {
+      font-size: clamp(30px, 7vw, 60px);
+      margin: 1.5rem;
+  }
+
+  .map-container {
+      padding: 0 1.5rem;
+      width: 90%;
+  }
+
+  .hospital-name {
+      font-size: 1rem;
+  }
 }

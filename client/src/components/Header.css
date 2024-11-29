@@ -1,58 +1,87 @@
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #1f519c;
-  padding: 20px 40px;
-  z-index: 1000;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  padding: 10px 20px; 
+  background-color: #1f519c; 
+  color: white;
+  font-family: 'Poppins', sans-serif; 
 }
 
-header .logo h1 {
-  font-size: 38px;
+.logo h1 {
+  font-size: 1.5rem; 
+  color: #ffffff;
+  font-weight: bold; 
+  margin: 0; 
 }
+
 .links {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 15px 30px;
-}
-.link {
-  padding: 5px 10px ;
-}
-
-.link:hover {
-  color: #275bbd;
-  padding: 5px 10px;
-  background-color: #e8e6d6;
-  border-radius: 20px;
-}
-
-
-/* .link:hover {
-  color: #275bbd;
-  padding: 5px 5px;
-  background-color: #e8e6d6;
-  border-radius: 20px;
-} */
-
-/* nav ul {
-  list-style: none;
   display: flex;
   gap: 20px;
 }
 
-nav ul li {
-  display: inline-block;
+.link {
+  color: #ffffff;
+  font-weight: 400; 
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 6px 12px; 
 }
 
-nav ul li a {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 6px 10px;
-} */
+.link:hover {
+  color: white; 
+  background-color: rgba(227, 242, 253, 0.3); 
+}
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e3f2fd; 
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%; 
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #ffffff;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+@media (max-width: 680px) {
+  .links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1f519c;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

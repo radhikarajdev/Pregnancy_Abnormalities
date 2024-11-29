@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.report-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    padding-top: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 80vh;
+}
+
+.header-rep {
+    margin-bottom: 30px;
+}
+
+.header-rep h1 {
+    font-size: 32px;
+    color: #1f519c;
+    text-shadow: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-rep p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.header-rep hr {
+    border: 0;
+    border-top: 2px solid #1f519c;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.upload-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.upload-container button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-container button:hover {
+    background-color: #218838;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-section h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-section .result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.result-section .thickness {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.result-section .normal-range {
+    font-size: 16px;
+    color: #28a745;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.report-container .disclaimer {
+    background-color: #f8d7da;
+    border-left: 6px solid #dc3545;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.disclaimer h3{
+    color: #dc3545;
+}
+
+.report-container .disclaimer p{
+    color: #721c24;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer .button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer .button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .report-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+}

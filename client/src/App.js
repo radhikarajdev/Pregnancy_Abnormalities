@@ -8,7 +8,9 @@ import About from './components/About';
 import Mapview from './components/Mapview';
 import Sign from './components/Sign';
 import Login from './components/Login';
+import Report from './components/Report';
 import './styles/App.css';
+import Chatbot from './components/Chatbot';
 
 const App = () => {
   return (
@@ -29,6 +31,12 @@ const App = () => {
         </Route>
         <Route path="/login">
           <Login/>
+        </Route>
+        <Route path="/chatbot">
+          <Chatbot/>
+        </Route>
+        <Route path="/report">
+          <Report/>
         </Route>
       </Switch>
       <Footer />

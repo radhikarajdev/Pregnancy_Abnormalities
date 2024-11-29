@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to pregnancy anxiety
+  steps:
+  - intent: pregnancy_anxiety
+  - action: utter_pregnancy_anxiety
+- rule: Handle general questions
+  steps:
+  - intent: general_question # Define this intent in your NLU file
+  - action: action_answer_general_question

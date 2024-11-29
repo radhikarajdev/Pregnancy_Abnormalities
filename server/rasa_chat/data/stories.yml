@@ -1,0 +1,190 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: first trimester symptoms
+  steps:
+  - intent: first_trimester_symptoms
+  - action: utter_first_trimester_symptoms
+- story: second trimester symptoms
+  steps:
+  - intent: second_trimester_symptoms
+  - action: utter_second_trimester_symptoms
+- story: third trimester symptoms
+  steps:
+  - intent: third_trimester_symptoms
+  - action: utter_third_trimester_symptoms
+- story: dietary recommendations
+  steps:
+  - intent: recommend_fruits
+  - action: utter_recommend_fruits
+- story: vegetable recommendations
+  steps:
+  - intent: recommend_vegetables
+  - action: utter_recommend_vegetables
+- story: protein recommendations
+  steps:
+  - intent: recommend_proteins
+  - action: utter_recommend_proteins
+- story: dairy recommendations
+  steps:
+  - intent: recommend_dairy
+  - action: utter_recommend_dairy
+- story: grain recommendations
+  steps:
+  - intent: recommend_grains
+  - action: utter_recommend_grains
+- story: snack recommendations
+  steps:
+  - intent: recommend_snacks
+  - action: utter_recommend_snacks
+- story: hydration recommendations
+  steps:
+  - intent: recommend_hydration
+  - action: utter_recommend_hydration
+- story: vitamin recommendations
+  steps:
+  - intent: recommend_vitamins
+  - action: utter_recommend_vitamins
+- story: fiber recommendations
+  steps:
+  - intent: recommend_fiber
+  - action: utter_recommend_fiber
+- story: healthy fats recommendations
+  steps:
+  - intent: recommend_healthy_fats
+  - action: utter_recommend_healthy_fats
+- story: exercise type recommendations
+  steps:
+  - intent: recommend_exercise_types
+  - action: utter_recommend_exercise_types
+- story: exercise frequency recommendations
+  steps:
+  - intent: recommend_exercise_frequency
+  - action: utter_recommend_exercise_frequency
+- story: safe exercises recommendations
+  steps:
+  - intent: recommend_safe_exercises
+  - action: utter_recommend_safe_exercises
+- story: exercise duration recommendations
+  steps:
+  - intent: recommend_exercise_duration
+  - action: utter_recommend_exercise_duration
+- story: postpartum exercise recommendations
+  steps:
+  - intent: recommend_postpartum_exercise
+  - action: utter_recommend_postpartum_exercise
+- story: exercise for energy recommendations
+  steps:
+  - intent: recommend_exercise_for_energy
+  - action: utter_recommend_exercise_for_energy
+- story: exercise for mood recommendations
+  steps:
+  - intent: recommend_exercise_for_mood
+  - action: utter_recommend_exercise_for_mood
+- story: stretching exercises recommendations
+  steps:
+  - intent: recommend_stretching_exercises
+  - action: utter_recommend_stretching_exercises
+- story: low impact exercises recommendations
+  steps:
+  - intent: recommend_low_impact_exercises
+  - action: utter_recommend_low_impact_exercises
+- story: exercise for back pain recommendations
+  steps:
+  - intent: recommend_exercise_for_back_pain
+  - action: utter_recommend_exercise_for_back_pain
+- story: manage nausea
+  steps:
+  - intent: manage_nausea
+  - action: utter_manage_nausea
+- story: manage fatigue
+  steps:
+  - intent: manage_fatigue
+  - action: utter_manage_fatigue
+- story: manage heartburn
+  steps:
+  - intent: manage_heartburn
+  - action: utter_manage_heartburn
+- story: manage back pain
+  steps:
+  - intent: manage_back_pain
+  - action: utter_manage_back_pain
+- story: manage swelling
+  steps:
+  - intent: manage_swelling
+  - action: utter_manage_swelling
+- story: manage mood swings
+  steps:
+  - intent: manage_mood_swings
+  - action: utter_manage_mood_swings
+- story: manage constipation
+  steps:
+  - intent: manage_constipation
+  - action: utter_manage_constipation
+- story: manage headaches
+  steps:
+  - intent: manage_headaches
+  - action: utter_manage_headaches
+- story: manage shortness of breath
+  steps:
+  - intent: manage_shortness_of_breath
+  - action: utter_manage_shortness_of_breath
+- story: manage leg cramps
+  steps:
+  - intent: manage_leg_cramps
+  - action: utter_manage_leg_cramps
+- story: respond to pregnancy anxiety
+  steps:
+  - intent: pregnancy_anxiety
+  - action: utter_pregnancy_anxiety
+- story: manage pregnancy stress
+  steps:
+  - intent: pregnancy_anxiety
+  - action: utter_pregnancy_anxiety
+  - intent: manage_pregnancy_stress
+  - action: utter_manage_pregnancy_stress
+- story: support for pregnancy decision
+  steps:
+  - intent: pregnancy_anxiety
+  - action: utter_pregnancy_anxiety
+  - intent: decision_support
+  - action: utter_decision_support
+- story: User requests professional help
+  steps:
+  - intent: pregnancy_anxiety
+  - action: utter_pregnancy_anxiety
+  - intent: request_professional_help
+  - action: action_refer_to_professional
+
+- story: Answer general questions
+  steps:
+  - intent: general_question
+  - action: action_answer_general_question

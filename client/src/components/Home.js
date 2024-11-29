@@ -15,10 +15,9 @@ const Home = () => {
         </div>
       </div>
       <div className='after'>
-        {/* <div className='Log-in'></div> */}
         <div className='disclaimer'>
           <h1>Medical Disclaimer !!</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo possimus labore tempora similique quaerat consectetur corporis voluptatum omnis pariatur? Minus enim alias eaque corrupti aliquid fugit earum velit labore cupiditate.</p>
+          <p>This analysis is for advisory purposes only and should not replace official medical records. Consult certified medical professionals for final decisions regarding fetal health.</p>
         </div>
       </div>
     </div>
