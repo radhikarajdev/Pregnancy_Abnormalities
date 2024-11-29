@@ -4,7 +4,6 @@ import "./Report.css";
 const Report = () => {
     const [image, setImage] = useState(null);
     const [result, setResult] = useState("");
-    const [thickness, setThickness] = useState(null);
 
     const handleImageUpload = (e) => {
         setImage(e.target.files[0]);
@@ -28,7 +27,6 @@ const Report = () => {
             const data = await response.json();
             console.log("API Response:", data); // Debugging line
             setResult(data.message);
-            setThickness(data.thickness || "N/A");
         } catch (error) {
             console.error("Error:", error);
             alert("Error processing the image.");
